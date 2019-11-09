@@ -241,14 +241,14 @@ Outputs are displayed with `<cite>` element:
 ```html
 <cite>
     <b id="+">
-        <p>Foo now has values: </p>
+        <p>Foo now has value: </p>
         <p id="foo"></p>
     </b>
 </cite>
 ```
 Which is compiled as an `alert()` function:
 ```js
-alert(('Foo has new values: ' + foo))
+alert(('Foo has new value: ' + foo))
 ```
 
 #
