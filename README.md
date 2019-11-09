@@ -167,7 +167,7 @@ foo != 'Hello there!';
 ```
 is compiled as:
 ```js
-((foo >= 10) && (phrase == 'Hello there!') || (!(reply == 'General Kenobi')))
+(((foo >= 10) && (phrase == 'Hello there!')) || (!(reply == 'General Kenobi')))
 ```
 This comparisons can be inserted as first child of `<ul>` elements to create complex if conditions
 
