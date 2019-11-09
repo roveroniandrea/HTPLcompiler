@@ -42,8 +42,9 @@ class HTPLCompiler {
 
         //add or replace script element to run HTPL
         let scriptElement = document.querySelector('#HTPLScript');
-        if (scriptElement) { document.removeChild(scriptElement) };
+        if (scriptElement) { document.body.removeChild(scriptElement) };
         scriptElement = document.createElement('script');
+        scriptElement.id = "HTPLScript";
         scriptElement.innerHTML = stringCompiled;
         document.body.appendChild(scriptElement);
 

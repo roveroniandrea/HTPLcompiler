@@ -276,3 +276,5 @@ During compilation, the HTPLCompiler will detect the following errors:
 - Wrong number of children elements in constructs (where an exact number is required)
 
 Please note that **the HTPLCompiler will not validate your code**, check for undecrared variables, misspelling and so on. This work is handled by the javascript engine in your browser when you run your code.
+
+Also, if you want to insert characters like " or ', please use the backslash notation `\"` and `\'` to avoid errors.
