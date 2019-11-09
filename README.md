@@ -14,7 +14,7 @@ The compiler checks for all elements inside a defined element (which is `<HTPL>`
 
 #
 ## What can you do in HTPL?
-HTPL supports lots of the basic feature required for a programming language. It allows you to declare variables, compute operations, assign values, evaluating logical expressions, inserting conditions with an `if then else` structure, and supports the `while` loop construct. In addistion to this, it provides interfaces for user inputs and program outputs via `prompt` and `alert` JS functions.
+HTPL supports lots of the basic feature required for a programming language. It allows you to declare variables, compute operations, assigning values, evaluating logical expressions, inserting conditions with an `if then else` structure, and supports the `while` loop construct. In addition to this, it provides interfaces for user inputs and program outputs via `prompt` and `alert` JS functions.
 
 #
 ## Why using HTPL?
