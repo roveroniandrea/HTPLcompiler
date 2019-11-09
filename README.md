@@ -100,7 +100,7 @@ foo = 10 + foo
 Please note that `foo` must be previously declared with `<h1>` element. If foo is not previously declared, the compiler won't give you an error, but the JS code will not work.
 
 ## If then else branches
-The if then else is defined by the `ul` element. This element must have exactly two or three branches (condition, if branch and optional else branch). This code:
+The if then else construct is defined by the `ul` element. This element must have exactly two or three branches (condition, if branch and optional else branch). This code:
 ```html
 <ul>
     <strong id="==">
