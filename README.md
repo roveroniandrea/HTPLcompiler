@@ -1,4 +1,5 @@
 # HTPL Compiler by Andrea Roveroni
+## [Try some examples](https://roveroniandrea.github.io/HTPLcompiler/)
 **It's known that HTML is not a programming language.** In fact it stands for Hyper Text Markup Language.
 
 No one could make a program in HTML.
@@ -21,7 +22,7 @@ HTPL main purpose is to destoy the "HTML is not a programming language" meme, bu
 
 #
 ## Get started
-If you want to simply inject the compiler in your code, download `main.js` file and attach it in you `index.html` file. If you need some examples and introduction, continue reading.
+If you want to simply inject the compiler in your code, download `main.js` file and attach it in you `index.html` file. If you need some examples and introduction, continue reading or [try some examples](https://roveroniandrea.github.io/HTPLcompiler/).
 
 HTPLCompiler interface can be found on your browser console, and provides you with an help() function to get started.
 
