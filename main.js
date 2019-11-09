@@ -19,12 +19,9 @@ class HTPLCompiler {
         compileElement() -> Compiles a single element and his children and returns the code (does not create script element)
         compileChildOf() -> Compiles the cildren of an element but not the element itself. Returns the code (does not create script element)
         help() -> Displays a list of available commands
-        helpHTPL() -> Displays information on how to program in HTPL
         welcome() -> Displays welcome information`);
-    }
-
-    static helpHTPL(){
-        console.log('Section not available');
+        let readmeUrl = 'https://github.com/roveroniandrea/HTPLcompiler/blob/master/README.md';
+        console.warn(`Please check on github to get detailed information: ${readmeUrl}`);
     }
 
     static compile(displayCode = false) {

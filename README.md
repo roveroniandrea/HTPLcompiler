@@ -1,5 +1,5 @@
 # HTPL Compiler by Andrea Roveroni
-It's known that HTML is not a programming language. In fact it stands for Hyper Text Markup Language.
+**It's known that HTML is not a programming language.** In fact it stands for Hyper Text Markup Language.
 
 No one could make a program in HTML.
 
