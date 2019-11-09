@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>From dec to bin</title>
+    <script src="HTPLCompiler.js"></script>
+</head>
+
+<body>
+    <HTPL>
+        <p class="HTPL-ignore">Insert a decimal number and get it's conversion in binary!</p>
+        <button class="HTPL-ignore" onclick="HTPLCompiler.compileAndRun(false)">Compile and run</button>
+        <h1 id="decimalNumber">
+            <prompt id="Insert a decimal number: "></prompt>
+        </h1>
+        <div id="conversionFunction" class="decNumber">
+            <h1 id="resto">
+                <b id="%">
+                    <p id="decNumber"></p>
+                    <p id="2"></p>
+                </b>
+            </h1>
+            <h1 id="integerResult">
+                <b id="/">
+                    <b id="-">
+                        <p id="decNumber"></p>
+                        <p id="resto"></p>
+                    </b>
+                    <p id="2"></p>
+                </b>
+            </h1>
+            <ul>
+                <strong id="<=">
+                    <p id="integerResult"></p>
+                    <p id="0"></p>
+                </strong>
+                <if>
+                    <return><p id="resto"></p></return>
+                </if>
+                <else>
+                    <return>
+                        <b id="+">
+                            <b id="*">
+                                <h3 id="conversionFunction">
+                                    <p id="integerResult"></p>
+                                </h3>
+                                <p id="10"></p>
+                            </b>
+                            <p id="resto"></p>
+                        </b>
+                    </return>
+                </else>
+            </ul>
+        </div>
+        <cite>
+            <b id="+">
+                <b id="+">
+                    <p id="decimalNumber"></p>
+                    <p> is converted in </p>
+                </b>
+                <h3 id="conversionFunction">
+                    <p id="decimalNumber"></p>
+                </h3>
+            </b>
+        </cite>
+    </HTPL>
+</body>
+
+</html>

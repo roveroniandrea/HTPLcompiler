@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Say Hello</title>
+    <script src="HTPLCompiler.js"></script>
+</head>
+
+<body>
+    <HTPL>
+        <p class="HTPL-ignore">This HTPL code will say hello to you!</p>
+        <button class="HTPL-ignore" onclick="HTPLCompiler.compileAndRun(false)">Compile and run</button>
+        <h1 id="myName">
+            <prompt id="What\'s your name?"></prompt>
+        </h1>
+        <cite>
+            <b id="+">
+                <b id="+">
+                    <p>Hello </p>
+                    <p id="myName"></p>
+                </b>
+                <p>!</p>
+            </b>
+        </cite>
+    </HTPL>
+</body>
+
+</html>
