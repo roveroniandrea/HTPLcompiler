@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTPL</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <HTPL>
+        <h1 id="foo">
+            <b id="+">
+                <p id="10"></p>
+                <p id="20"></p>
+            </b>
+        </h1>
+        <p class="HTPL-ignore">This is a comment</p>
+        <h2 id="foo">
+            <b id="+">
+                <p id="foo"></p>
+                <p id="1"></p>
+            </b>
+        </h2>
+        <h1 id="matchaCon">
+            <prompt id="Foo deve essere uguale a?"></prompt>
+        </h1>
+        <ul>
+            <strong id="==">
+                <p id="matchaCon"></p>
+                <p id="foo"></p>
+            </strong>
+            <if><cite>
+                    <p>foo is equal to matchaCon</p>
+                </cite></if>
+            <else><cite>
+                    <p>foo is not equal to matchaCon</p>
+                </cite></else>
+        </ul>
+        <div id="myFunction" class="name, age">
+            <h2 id="foo">
+                <prompt id="Hai chiamato la funzione!"></prompt>
+            </h2>
+            <cite><b id="+">
+                    <b id="+">
+                        <p>Name: </p>
+                        <p id="name"></p>
+                    </b>
+                    <b id="+">
+                        <p> Age: </p>
+                        <p id="age"></p>
+                    </b>
+                </b></cite>
+            <cite><b id="+">
+                    <p>Foo ora vale: </p>
+                    <p id="foo"></p>
+                </b></cite>
+        </div>
+        <h3 id="myFunction">
+            <p>Andrea</p>
+            <p id="19"></p>
+        </h3>
+        <h1 id="numberOfLoops">
+            <p id="5"></p>
+        </h1>
+        <while>
+            <strong id=">">
+                <p id="numberOfLoops"></p>
+                <p id="0"></p>
+            </strong>
+            <cite><b id="+">
+                    <p>numberOfLoops: </p>
+                    <p id="numberOfLoops"></p>
+                </b></cite>
+            <h2 id="numberOfLoops">
+                <b id="-">
+                    <p id="numberOfLoops"></p>
+                    <p id="1"></p>
+                </b>
+            </h2>
+        </while>
+    </HTPL>
+</body>
+
+</html>
