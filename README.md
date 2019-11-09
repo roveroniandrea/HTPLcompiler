@@ -10,7 +10,7 @@ Welcome to the HTPLcompiler, a compiler that lets you program in HTML.
 
 Ladies and gentleman, ~~I'm~~ we're proud to present you the **HTPL**, or **Hyper Text Programming Language**.
 
-The compiler checks for all elements inside a defined element (which is `<HTPL>`) in body, and creates a `<script>` element containg JS code.
+The compiler checks for all elements inside a defined element (which is `<HTPL>`) in body, and creates a `<script>` element containing JS code.
 
 #
 ## What can you do in HTPL?
