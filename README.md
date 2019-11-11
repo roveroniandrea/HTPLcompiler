@@ -10,11 +10,11 @@ Welcome to the HTPLcompiler, a compiler that lets you program in HTML.
 
 Ladies and gentleman, ~~I'm~~ we're proud to present you the **HTPL**, or **Hyper Text Programming Language**.
 
-The compiler checks for all elements inside a defined element (which is `<HTPL>`) in body, and creates a `<script>` element containg JS code.
+The compiler checks for all elements inside a defined element (which is `<HTPL>`) in body, and creates a `<script>` element containing JS code.
 
 #
 ## What can you do in HTPL?
-HTPL supports lots of the basic feature required for a programming language. It allows you to declare variables, compute operations, assign values, evaluating logical expressions, inserting conditions with an `if then else` structure, and supports the `while` loop construct. In addistion to this, it provides interfaces for user inputs and program outputs via `prompt` and `alert` JS functions.
+HTPL supports lots of the basic feature required for a programming language. It allows you to declare variables, compute operations, assigning values, evaluating logical expressions, inserting conditions with an `if then else` structure, and supports the `while` loop construct. In addition to this, it provides interfaces for user inputs and program outputs via `prompt` and `alert` JS functions.
 
 #
 ## Why using HTPL?
@@ -100,7 +100,7 @@ foo = 10 + foo
 Please note that `foo` must be previously declared with `<h1>` element. If foo is not previously declared, the compiler won't give you an error, but the JS code will not work.
 
 ## If then else branches
-The if then else is defined by the `ul` element. This element must have exactly two or three branches (condition, if branch and optional else branch). This code:
+The if then else construct is defined by the `ul` element. This element must have exactly two or three branches (`condition`, `if` branch and optional `else` branch). This code:
 ```html
 <ul>
     <strong id="==">
@@ -128,7 +128,7 @@ else{
 The element `<strong>` will be explained in details later, but it stands for a comparison. Please note that condition, if and else branches must be declared in this exact order.
 
 ## Comparison and logical operations
-As seen previously, a comperison is identified by the `<strong>` element. The operator is specified by the id. Exactly two children are required, both of them must return a comparable value:
+As seen previously, a comparison is identified by the `<strong>` element. The operator is specified by the id. Exactly two children are required, both of them must return a comparable value:
 ```html
 <strong id=">=">
     <p id="foo"></p>
@@ -167,7 +167,7 @@ foo != 'Hello there!';
 ```
 is compiled as:
 ```js
-((foo >= 10) && (phrase == 'Hello there!') || (!(reply == 'General Kenobi')))
+(((foo >= 10) && (phrase == 'Hello there!')) || (!(reply == 'General Kenobi')))
 ```
 This comparisons can be inserted as first child of `<ul>` elements to create complex if conditions
 
@@ -276,6 +276,6 @@ During compilation, the HTPLCompiler will detect the following errors:
 - Missing or incorrect id on element (where required)
 - Wrong number of children elements in constructs (where an exact number is required)
 
-Please note that **the HTPLCompiler will not validate your code**, check for undecrared variables, misspelling and so on. This work is handled by the javascript engine in your browser when you run your code.
+Please note that **the HTPLCompiler will not validate your code**, for example by checking for undeclared variables, misspelling and so on. This work is handled by the javascript engine in your browser when you run your code, so a compiled HTPL code may not produce a valid Javascript code. I recommend you to check the console for JS errors.
 
-Also, if you want to insert characters like " or ', please use the backslash notation `\"` and `\'` to avoid errors.
+Also, if you want to insert characters like `"` or `'`, please use the backslash notation `\"` and `\'` to avoid errors.
