@@ -1,6 +1,6 @@
 {
   "name": "@roveroniandrea/htpl-cli",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "CLI for HTPL compiler",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,26 @@
   "bin": {
     "htpl": "bin/main.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roveroniandrea/HTPLcompiler.git"
+  },
+  "keywords": [
+    "HTML",
+    "HTPL",
+    "compiler",
+    "JS",
+    "Javascript",
+    "CLI"
+  ],
   "author": "Andrea Roveroni",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
     "figlet": "^1.5.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/roveroniandrea/HTPLcompiler/issues"
+  },
+  "homepage": "https://github.com/roveroniandrea/HTPLcompiler#readme"
 }
