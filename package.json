@@ -1,0 +1,27 @@
+{
+  "name": "htplcompiler",
+  "version": "1.0.0",
+  "description": "Htpl compiler. From HTML to Javascript",
+  "main": "HTPLCompiler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roveroniandrea/HTPLcompiler.git"
+  },
+  "keywords": [
+    "HTML",
+    "HTPL",
+    "compiler",
+    "JS",
+    "Javascript",
+    "CLI"
+  ],
+  "author": "Andrea Roveroni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roveroniandrea/HTPLcompiler/issues"
+  },
+  "homepage": "https://github.com/roveroniandrea/HTPLcompiler#readme"
+}

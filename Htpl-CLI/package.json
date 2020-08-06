@@ -1,0 +1,19 @@
+{
+  "name": "@roveroniandrea/htpl-cli",
+  "version": "1.0.2",
+  "description": "CLI for HTPL compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "htpl greetings"
+  },
+  "bin": {
+    "htpl": "bin/main.js"
+  },
+  "author": "Andrea Roveroni",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "figlet": "^1.5.0"
+  }
+}
