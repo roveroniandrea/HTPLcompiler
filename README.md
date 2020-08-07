@@ -1,5 +1,6 @@
 # HTPL Compiler by Andrea Roveroni
-## [Try some examples](https://roveroniandrea.github.io/HTPLcompiler/)
+## [Try some examples](https://roveroniandrea.github.io/HTPLcompiler/) - or you're looking for [Htpl-CLI](https://github.com/roveroniandrea/HTPLcompiler/tree/master/Htpl-CLI)?
+#
 **It's known that HTML is not a programming language.** In fact it stands for Hyper Text Markup Language.
 
 No one could make a program in HTML.
@@ -8,7 +9,7 @@ No one could make a program in HTML.
 
 Welcome to the HTPLcompiler, a compiler that lets you program in HTML.
 
-Ladies and gentleman, ~~I'm~~ we're proud to present you the **HTPL**, or **Hyper Text Programming Language**.
+Ladies and gentleman, ~~we're~~ I'm proud to present you the **HTPL**, or **Hyper Text Programming Language**.
 
 The compiler checks for all elements inside a defined element (which is `<HTPL>`) in body, and creates a `<script>` element containing JS code.
 
@@ -21,7 +22,11 @@ HTPL supports lots of the basic feature required for a programming language. It 
 HTPL main purpose is to destoy the "HTML is not a programming language" meme, but you're able to make complex programs too, if you want.
 
 #
-## Get started
+## Get started - CLI
+If you want to use the new Htpl-CLI, please follow [this guide](https://github.com/roveroniandrea/HTPLcompiler/tree/master/Htpl-CLI)
+
+#
+## Get started - Browser
 If you want to simply inject the compiler in your code, download `main.js` file and attach it in you `index.html` file. If you need some examples and introduction, continue reading or [try some examples](https://roveroniandrea.github.io/HTPLcompiler/).
 
 HTPLCompiler interface can be found on your browser console, and provides you with an help() function to get started.
@@ -265,7 +270,7 @@ All elements that are not children of the `<HTPL>` tag will be ignored. If you w
 </cite>
 ```
 
-# HTPLCompiler interface
+# HTPLCompiler interface - Browser
 The HTPLCompiler interface can be accessed by opening che debugger's console in your browser. You will see a welcome log.
 The interface is implemented in one static class `HTPLCompiler`. His two most important functions are `HTPLCompiler.compile(displayCode = false)`, which compiles your HTPL code and creates a `<script>` element, and `HTPLCompiler.runHTPL()`, that runs your compiled script tag. You may execute both of them by calling `HTPLCompiler.compileAndRun(displayCode = false)`. If you call the compiler by passing true as the argument, the compiled JS code will be logged in the console.
 
