@@ -15,8 +15,8 @@ switch (command) {
     if (!fileName) {
       logError('Must provide a file to build!');
     } else {
-      if (!fileName.includes('.html')) {
-        fileName += '.html';
+      if (!(fileName.includes('.html') || fileName.includes('.htpl'))) {
+        fileName += '.htpl';
       }
       if (!fs.existsSync(fileName)) {
         logError(`File ${fileName} does not exist!`);
@@ -60,7 +60,8 @@ switch (command) {
 
 function greetings() {
   console.log(chalk.yellow(figlet.textSync('Htpl-CLI', { horizontalLayout: 'full' })));
-  console.log(chalk.yellow('Thank you for installing Htpl-CLI! -Andrea R.\n'));
+  console.log(chalk.yellow('Thank you for installing Htpl-CLI! -Andrea R.'));
+  console.log('If you need help, type ' + chalk.yellow('htpl help') + '\n');
 }
 
 function showHelp() {
@@ -105,7 +106,7 @@ function logError(error) {
 
 // COMPILER
 function compile(fileName, displayCode = false) {
-  console.log(chalk.yellow('Starting compilation...'));
+  console.log(chalk.yellow(`Starting compilation of ${fileName}...`));
   //HTML element containg code
   const fileString = fs.readFileSync(fileName, 'utf-8');
   let HTPLelement = new JSDOM(fileString).window.document.querySelector('HTPL');
