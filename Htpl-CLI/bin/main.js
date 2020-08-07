@@ -4,7 +4,7 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 const fs = require('fs');
 const prettier = require('prettier');
-const pakageJson = require('../package.json');
+const packageJson = require('../package.json');
 const checkUpdates = require('npm-check-updates');
 const { exec } = require('child_process');
 const { JSDOM } = require('jsdom');
@@ -149,7 +149,7 @@ function egg() {
 }
 
 function version() {
-  console.log('You have installed Htpl-CLI version ' + chalk.yellow(pakageJson.version));
+  console.log('You have installed Htpl-CLI version ' + chalk.yellow(packageJson.version));
   update();
 }
 
@@ -158,11 +158,18 @@ function update() {
     .run({
       filter: '@roveroniandrea/htpl-cli',
       silent: true,
+      packageData: JSON.stringify(packageJson)
     })
     .then((upgraded) => {
       const newVersion = upgraded['@roveroniandrea/htpl-cli'];
-      if(newVersion){
-        console.log(chalk.yellow(`\nA newer version of Htpl-CLI was found: ${chalk.white(newVersion)}, you should run '${chalk.white('npm install @roveroniandrea/htpl-cli@latest')}'`))
+      if (newVersion) {
+        console.log(
+          chalk.yellow(
+            `\nA newer version of Htpl-CLI was found: ${chalk.white(newVersion)}, you should run '${chalk.white(
+              'npm install @roveroniandrea/htpl-cli@latest'
+            )}'`
+          )
+        );
       }
     });
 }
