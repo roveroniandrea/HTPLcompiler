@@ -1,7 +1,5 @@
 # Operations between values
 
-
-
 The `<b>` element is used to execute operations between two values. The operation is defined by its id, for example:
 
 ```markup

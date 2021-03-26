@@ -4,8 +4,6 @@
 
 ### [Try some examples](https://roveroniandrea.github.io/HTPLcompiler/) - or you're looking for [Htpl-CLI](https://github.com/roveroniandrea/HTPLcompiler/tree/master/Htpl-CLI)?
 
-## 
-
 **It's known that HTML is not a programming language.** In fact it stands for Hyper Text Markup Language.
 
 No one could make a program in HTML.
