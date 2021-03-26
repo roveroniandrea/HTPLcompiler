@@ -6,6 +6,7 @@
 
 ---
 
+* [Github repository](https://github.com/roveroniandrea/HTPLcompiler)
 * [What is HTPL and why it exists](what-is-htpl-and-why-it-exists.md)
 * [Getting started](getting-started.md)
 
